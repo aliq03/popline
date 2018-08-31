@@ -35,7 +35,7 @@
     padding: 12px;
     height: 17px;
     vertical-align: middle;
-    display: inline-block;
+    display: inline-block; 
     min-width: 14px;}
       .popline li a:link, .popline li a:hover, .popline li a:visited, .popline li a:active {
         color: white;
