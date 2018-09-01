@@ -1,19 +1,32 @@
 @charset "UTF-8";
 .popline {
     position: absolute;
-    border-radius: 3px;
-    background: #3f4549;
-    opacity: 0.95;
+    border-radius: 12px;
+    background: #2C2D2E;
     display: none;
     margin: 0;
     list-style: none;
-    padding: 0px 2px;
+    padding: 1px 5px;
     font-family: arial;
     text-rendering: optimizeLegibility;
-    white-space: nowrap; }
+    white-space: nowrap;}
+.popline:after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 8px solid hsl(210, 2%, 18%);
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
   .popline li {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     text-align: center;
@@ -22,21 +35,20 @@
       .popline li i {
         font-weight: bold; } }
     .popline li .popline-text {
-    font-size: 19.4px;
-    top: -3px;
+    font-size: 17.4px;
+    top: -1px;
     display: inline-block;
     position: relative; }
     .popline li .fa, .popline li .popline-background-fix {
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
     .popline li a {
-      background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBR‌​AA7") 0 0 repeat\9;
+    background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBR‌​AA7) 0 0 repeat\9;
     margin: 0;
     outline: none;
-    padding: 12px;
-    height: 17px;
+    padding: 10px;
     vertical-align: middle;
-    display: inline-block; 
-    min-width: 14px;}
+    display: inline-block;
+    min-width: 9px;}
       .popline li a:link, .popline li a:hover, .popline li a:visited, .popline li a:active {
         color: white;
         text-decoration: none; }
